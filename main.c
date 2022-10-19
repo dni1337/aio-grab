@@ -465,12 +465,12 @@ int main(int argc, char **argv)
 					stb_type = BRCM7366;
 					break;
 				}
-				else if (strstr(buf,"hi3798"))
+				else if (strstr(buf,"3798"))
 				{
 					stb_type = HISIL_ARM;
 					break;
 				}
-				else if (strstr(buf,"hi3716"))
+				else if (strstr(buf,"3716"))
 				{
 					stb_type = HISIL_ARM;
 					break;
@@ -478,6 +478,11 @@ int main(int argc, char **argv)
 				else if (strstr(buf,"Meson-6") || strstr(buf,"Meson-64"))
 				{
 					stb_type = WETEK;
+					break;
+				}
+				else
+				{
+					stb_type = HISIL_ARM;
 					break;
 				}
 			}
